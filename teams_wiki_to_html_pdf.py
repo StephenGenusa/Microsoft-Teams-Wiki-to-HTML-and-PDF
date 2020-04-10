@@ -1,6 +1,6 @@
 #
 # Create HTML and PDF files from Microsoft Wiki files
-# See github repo for details:
+# See github repo for details: https://github.com/StephenGenusa/Microsoft-Teams-Wiki-to-HTML-and-PDF
 # By Stephen Genusa, April 2020
 #
 # Uses Python >= 3.x with no additional requirements
