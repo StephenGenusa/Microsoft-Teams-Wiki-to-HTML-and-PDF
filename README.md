@@ -14,11 +14,11 @@ To use this utility,
 4. Unzip the pages to a new directory. 
 5. Run this command against the directory.
  
-The pages from Sharepoint named "[title] - ##.mht" the utility reverses that so that the outputs are ## - [title].html/pdf This allows you to concat the PDFs in the order the pages were created, if desired which was more desirable in my case than a big dump of names, sortable only by title.
+The pages from Sharepoint are named "[title] - ##.mht". This utility reverses that so that the outputs are ## - [title].html/pdf This allows you to concat the PDFs in the order the pages were created, if desired which was more desirable in my case than a big dump of names, sortable only by page title.
 
 ##Usage
 <pre><code>
-usage: teams\_wiki\_to\_html\_pdf.py [-h] [--wiki-input-path]
-       teams\_wiki\_to\_html\_pdf.py --wiki-input-path "C:\Users\Username\Desktop\Your Path"
+usage: teams_wiki_to_html_pdf.py [-h] [--wiki-input-path]
+       teams_wiki_to_html_pdf.py --wiki-input-path "C:\Users\Username\Desktop\Your Path"
 </pre>
 
