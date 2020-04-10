@@ -8,11 +8,12 @@ When I did my first conversion to HTML and then PDF I realized why, perhaps, Mic
 
 To use this utility,
 
-1. Go to your SharePoint page where the wiki is located
-2. Go to the Pages link
-3. Download the Wiki directory. On my site it gave me a download named General.zip
-4. Unzip the pages to a new directory. 
-5. Run this command against the directory.
+1. Install wkhtmltopdf [https://wkhtmltopdf.org/downloads.html](https://wkhtmltopdf.org/downloads.html)
+2. Go to your SharePoint page where the wiki is located
+3. Go to the Pages link
+4. Download the Wiki directory. On my site it gave me a download named General.zip
+5. Unzip the pages to a new directory. 
+6. Run this command against the directory.
  
 The pages from Sharepoint are named "[title] - ##.mht". This utility reverses that so that the outputs are ## - [title].html/pdf This allows you to concat the PDFs in the order the pages were created, if desired which was more desirable in my case than a big dump of names, sortable only by page title.
 
