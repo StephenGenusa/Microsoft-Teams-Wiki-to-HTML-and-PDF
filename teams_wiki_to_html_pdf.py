@@ -32,7 +32,7 @@ def strip_pointless_mht_msincomps(mht_file_name):
         # parse the dubious and useless image references with width and height, retaining those
         html_text = re.sub(r'<img.*\/(img.*)" src.*(height=".*?").*(width=".*?")(\/>|>)', r'<img src="\1" \2 \3 />', html_text)
         # handle all other img cases
-        html_text = re.sub(r'<img.*\/(img.*?)".*(\/>|>)', r'<img src="\1" />', html_text)
+        html_text = re.sub(r'<img.*/(img-\d{1,4}-.*?\.\w{3,4}).*?>', r'<img src="\1" />', html_text)
         # Oh boy. Matryoshka style font family and size references...
         for loop_count in range(1, 5):
             html_text = re.sub(r'<span style="font-fam.*?">(.*)?</span>', r'\1', html_text)
